@@ -21,7 +21,7 @@ fun main() {
     //menghitung nilai akhir
     val nilaiAkhir = (uts * 0.3) + (uas * 0.4) + (tugas * 0.3)   
 
-    //klasifikasi grade berdasarkan nilai akhir
+    //klasifikasi grade berdasarkan nilai akhir 
     val grade = when (nilaiAkhir.toInt()) {
         in 85..100 -> "A"
         in 70..84 -> "B"
@@ -39,7 +39,7 @@ fun main() {
         else -> "Sangat Kurang"
     }
 
-    //status kelulusan berdasarkan nilai akhir
+    //status kelulusan berdasarkan nilai akhir jika nilai akhir >= 60 maka lulus, jika < 60 maka tidak lulus
     val status = if (nilaiAkhir >= 60) "LULUS" else "TIDAK LULUS"
 
     //echo hasil penilaian
@@ -55,5 +55,6 @@ fun main() {
     println("Keterangan     : $keterangan")
     println("Status         : $status")
 
+    //echo status kelulusan
     println("\nSelamat! Anda dinyatakan $status.")
 }
